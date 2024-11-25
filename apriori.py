@@ -18,7 +18,7 @@ print(df_binario)
 itemset_frequente = apriori(df_binario, min_support=0.01, use_colnames=True)
 
 # Geração das Regras de associação
-regra = association_rules(itemset_frequente, metric="confidence", min_threshold=0.8)
+regra = association_rules(itemset_frequente, metric="confidence", min_threshold=0.7)
 
 # Print dos resultados
 print(itemset_frequente)
